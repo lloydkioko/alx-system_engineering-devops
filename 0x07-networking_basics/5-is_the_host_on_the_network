@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#a bash script that prints host
+
+if [ -z "$1" ]; then
+  echo "Please provide an IP address to ping"
+  exit 1
+fi
+
+ping -c 5 "$1"
